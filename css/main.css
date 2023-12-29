@@ -21,7 +21,10 @@ main {
   margin: 20px;
 }
 
-.change {
+.change-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 49%;
   border: none;
@@ -31,6 +34,18 @@ main {
   color: rgb(242, 122, 27);
   height: 48px;
 }
+.change-button:active{
+  background-color: #e74c3c;
+}
+
+.change[type="radio"] {
+  display: none;
+}
+
+.change[type="radio"]:checked + .radio-container {
+  display: flex;
+}
+
 .change-container {
   display: flex;
   align-items: center;
@@ -55,8 +70,10 @@ input:focus {
   display: flex;
   justify-content: flex-end;
 }
-.inner-container {
-  display: flex;
+/* .inner-container {
+} */
+.radio-container {
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;

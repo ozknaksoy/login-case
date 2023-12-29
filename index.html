@@ -25,49 +25,55 @@
           <h3>Trenyol'a giriş yap veya hesap oluştur, indirimleri kaçırma!</h3>
         </div>
         <div class="change-container">
-          <button class="change">Giriş Yap</button>
-          <button class="change">Üye Ol</button>
+          <label for="_login" class="change-button">Giriş Yap</label>
+          <label for="_sing_up" class="change-button">Üye Ol</label>
         </div>
         <div class="inner-container">
-          <div class="input-wrapper">
-            <label for="Şifre">E-Posta</label>
-            <input type="text" />
-            <label for="Şifre">Şifre</label>
-            <input type="password" />
-          </div>
-          <div class="forgot-password">
-            <span>Şifremi Unuttum</span>
-          </div>
-          <div class="login-container">
-            <button class="login-button">Giriş Yap</button>
-          </div>
-          <div class="social-container">
-            <div class="social facebook">
-              <i
-                class="fa-brands fa-square-facebook"
-                style="color: #2861bd"
-              ></i>
-              <div class="">
-                <h6>Facebook</h6>
-                <p>ile giriş yap</p>
+          <input class="change" id="_login" name="tab" type="radio" checked />
+          <div class="radio-container">
+            <div class="input-wrapper">
+              <label for="Şifre">E-Posta</label>
+              <input type="text" />
+              <label for="Şifre">Şifre</label>
+              <input type="password" />
+            </div>
+            <div class="forgot-password">
+              <span>Şifremi Unuttum</span>
+            </div>
+            <div class="login-container">
+              <button class="login-button">Giriş Yap</button>
+            </div>
+            <div class="social-container">
+              <div class="social facebook">
+                <i
+                  class="fa-brands fa-square-facebook"
+                  style="color: #2861bd"
+                ></i>
+                <div class="">
+                  <h6>Facebook</h6>
+                  <p>ile giriş yap</p>
+                </div>
+              </div>
+              <div class="social google">
+                <i
+                  class="fa-brands fa-square-google-plus"
+                  style="color: #ff0000"
+                ></i>
+                <div class="">
+                  <h6>Google</h6>
+                  <p>ile giriş yap</p>
+                </div>
               </div>
             </div>
-            <div class="social google">
-              <i
-                class="fa-brands fa-square-google-plus"
-                style="color: #ff0000"
-              ></i>
-              <div class="">
-                <h6>Google</h6>
-                <p>ile giriş yap</p>
-              </div>
+            <div class="transaction-without-login">
+              Üye olmadan verilen siparişlerin takibi için
+              <span>tıklayınız</span>
             </div>
           </div>
-          <div class="transaction-without-login">
-            Üye olmadan verilen siparişlerin takibi için
-            <span>tıklayınız</span>
-
-          </div>
+        </div>
+        <div class="inner-container">
+          <input class="change" id="_sing_up" name="tab" type="radio" />
+          <div class="radio-container"></div>
         </div>
       </div>
     </main>
