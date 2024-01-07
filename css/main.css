@@ -6,8 +6,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
-  margin: 0;
+  /* margin: 0; */
 }
 .description {
   display: flex;
@@ -29,6 +28,11 @@ main {
   border-top: 0;
   padding: 40px;
 }
+.change-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .change-button {
   display: flex;
@@ -41,7 +45,7 @@ main {
   border-radius: 3px 3px 0 0;
   z-index: 2;
   padding-bottom: 5px;
-  border-bottom: 0;
+  /* border-bottom: 0; */
   color: rgb(242, 122, 27);
   height: 48px;
 }
@@ -57,12 +61,6 @@ main {
   display: flex;
 }
 
-.change-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
 .input-wrapper {
   display: flex;
   flex-direction: column;
@@ -81,10 +79,6 @@ input:focus {
   display: flex;
   justify-content: flex-end;
 }
-.inner-container {
-  /* border-top: 1px solid #e6e6e6; */
-}
-
 label {
   font-size: 13px;
   margin-top: 10px;
@@ -92,7 +86,7 @@ label {
 }
 input {
   background-color: #fafafa;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 330px;
   height: 40px;
   font-size: 14px;
@@ -137,6 +131,7 @@ i {
   color: #999999;
   font-size: 13px;
 }
+
 .transaction-without-login {
   font-size: 12px;
   margin-top: 20px;
@@ -149,15 +144,16 @@ i {
 
 /** SING UP **/
 .gender-container {
-  width: 100%;
-  margin: 5px;
+  margin: 15px;
 }
 .gender-button-container {
   display: flex;
+  margin-top: 10px;
 }
 .gender-button {
+  cursor: pointer;
   height: 40px;
-  width: 175px;
+  width: 165px;
   border: 1px solid #e6e6e6;
   background-color: #fafafa;
 }
@@ -193,4 +189,13 @@ i {
 .checkbox {
   width: 20px;
   height: 20px;
+}
+.accont-description {
+  font-size: 12px;
+  margin-top: 20px;
+  color: #666;
+}
+.accont-description span {
+  text-decoration: underline;
+  font-weight: 700;
 }
