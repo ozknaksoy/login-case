@@ -14,6 +14,7 @@ main {
   align-items: center;
   flex-direction: column;
   margin: 20px;
+  text-align: center;
 }
 .description h1 {
   font-size: 24px;
@@ -26,7 +27,7 @@ main {
   flex-direction: column;
   border: 1px solid #e6e6e6;
   border-top: 0;
-  padding: 40px;
+  padding: 30px;
 }
 .change-container {
   display: flex;
@@ -45,7 +46,7 @@ main {
   border-radius: 3px 3px 0 0;
   z-index: 2;
   padding-bottom: 5px;
-  /* border-bottom: 0; */
+  border-bottom: 0;
   color: rgb(242, 122, 27);
   height: 48px;
 }
@@ -133,6 +134,7 @@ i {
 }
 
 .transaction-without-login {
+  text-align: center;
   font-size: 12px;
   margin-top: 20px;
   color: #666;
@@ -169,8 +171,9 @@ i {
 .password-description {
   font-size: 11px;
   width: 85%;
-  margin: 3px;
+  margin-top: 7px;
 }
+
 .checkbox-container {
   width: 330px;
 }
